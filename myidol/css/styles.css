@@ -1,0 +1,44 @@
+/* Fonts */
+
+@font-face {
+  font-family: pangram;
+  src: url('fonts/Pangram.ttf');
+}
+
+*{
+  font-family: pangram;
+}
+
+/* Nav Text animation */
+.waviy {
+  position: relative;
+}
+.waviy span {
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  animation: flip 2s infinite;
+  animation-delay: calc(.2s * var(--i))
+}
+@keyframes flip {
+  0%,80% {
+    transform: rotateY(360deg) 
+  }
+}
+
+/* Popular song modal css */
+.modal-dialog{
+  max-width: 800px;
+  margin: 30px auto ;
+}
+
+.modal-body{
+  position: relative;
+  padding: 0;
+}
+
+.btn-close{
+  position: absolute;
+  right: -30px;
+  top: 0;
+}
